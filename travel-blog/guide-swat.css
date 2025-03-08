@@ -1,0 +1,102 @@
+
+header {
+  height: 200vh;
+}
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+}
+
+.container_solid {
+    background-image: linear-gradient(180deg,  #B9C3C3, #B9C3C3, #B9C3C3, #d1baa6, #B9C3C3, #B9C3C3, #d6c4b3, #ddcab9, #fac8ac, #fdb58b, #c5a07b, #a87f63, #836a58, #85522b, #6e431b, #613611, #552d07f6, #4d2b0c,#3a1e04, #0c0701 );
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(swat2.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /*text-fill-color: transparent;*/
+
+}
+
+.container_image {
+  
+  background-image: url(swat2.jpg);
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: rgb(206, 167, 113);
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(233, 190, 131);
+}
+
+section h2 dt {
+  font-family: 'Fraunces', serif;
+}
+
+section p dd {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.all-image {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 100%;
+}
+body{
+    background-color: rgb(235, 222, 204);
+}
